@@ -1,0 +1,17 @@
+.templates-section {
+    position: relative;
+    display: flex;
+    place-items: center center;
+}
+
+.templates-section .templates-avatar-bg-container {
+    position: absolute;
+    width: 500px;
+
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.templates-section .templates-avatar-bg-container  img{
+    width: 100%;
+}

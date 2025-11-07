@@ -1,11 +1,15 @@
 import './App.css';
-import { Home } from './pages/home';
+import { AppRoutes } from './pages/app-routes';
+import { BrowserRouter } from 'react-router';
+
 
 function App() {
 
   return (
     <>
-      <Home />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   )
 }
