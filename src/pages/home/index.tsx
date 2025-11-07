@@ -1,24 +1,27 @@
 import { AboutBox } from '../../components/about-box';
 import { ActionButton } from '../../components/action-button';
+import { HomeTemplates } from '../../components/home-templates';
 
-import './index.css'
+import '../../assets/styles/home.css'
 
 export function Home() {
 
   return (
     <>
-    <main>
-      <div className='main'>
-        <p>Imagem de Algo</p>
-          <AboutBox>
-            <p>Testando, testando e testando</p>
-            <p>Acho que foi em {":)"}</p>
-          </AboutBox>
-          <p>Templates Exemplos</p>
-      </div>
+      <main>
+        <div className='main'>
+          <div className='avatar-container'>
+            <img src="./src/assets/images/main-avatar.webp" alt="Avatar do William" title="Avatar profissional" />
+          </div>
 
-      <ActionButton>Aperte aqui PFVR</ActionButton>
-    </main>
+          <AboutBox />
+
+          <HomeTemplates />
+
+        </div>
+
+        <ActionButton>Quero Ter Mais Presença Digital</ActionButton>
+      </main>
     </>
   )
 }
