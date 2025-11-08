@@ -1,0 +1,37 @@
+.contact-session .return-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contact-session .contact-img-container {
+    position: relative;
+    width: 400px;
+
+    margin-bottom: 100px;
+}
+.contact-session .contact-img-container img{
+    width: 100%;
+}
+
+.contact-form-container{
+    position: absolute;
+    bottom: -90px;
+    right: 50%;
+    transform: translateX(50%);
+    
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+}
+
+.contact-form-container .contact-form {
+    width: 500px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(226, 149, 149, 0.473);
+}
+
+.contact-form-container .contact-form .btn {
+    margin-top: 1rem;
+}
