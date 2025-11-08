@@ -35,15 +35,15 @@ export default function ContactForm() {
             <Form onSubmit={onSubmit} className='contact-form'>
                 <Form.Group controlId='name'>
                     <Form.Label>Seu Nome:</Form.Label>
-                    <Form.Control type="text" placeholder="Seu nome" required />
+                    <Form.Control type="text" name="name" placeholder="Seu nome" required />
                 </Form.Group>
                 <Form.Group controlId='email'>
                     <Form.Label>Seu Email:</Form.Label>
-                    <Form.Control type="email" placeholder="Seu email para contato" required />
+                    <Form.Control type="email" name='email' placeholder="Seu email para contato" required />
                 </Form.Group>
                 <Form.Group controlId='message'>
                     <Form.Label>Mande uma mensagem:</Form.Label>
-                    <Form.Control as="textarea" rows={4} style={{resize: 'none'}} placeholder='Escreva sua mensagem aqui...' required />
+                    <Form.Control as="textarea" name="message" rows={4} style={{resize: 'none'}} placeholder='Escreva sua mensagem aqui...' required />
                 </Form.Group>
 
                 <input type="hidden" name="subject" value="Form recebido - Página Freelancer" />
