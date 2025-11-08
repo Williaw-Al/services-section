@@ -8,7 +8,7 @@ export default function ContactForm() {
 
     const onSubmit = async (event: any) => {
         event.preventDefault();
-        setResult("Sending....");
+        setResult("Enviando....");
         const formData = new FormData(event.target);
         formData.append("access_key", "bed73c46-1789-4356-99c9-dcd3dadba4e2");
 
@@ -21,9 +21,10 @@ export default function ContactForm() {
         if (data.success) {
             setResult("Form Submitted Successfully");
             event.target.reset();
-            navigate("/");
+            navigate("/teu-espaco-virtual");
         } else {
-            setResult("Error");
+            alert("Algo de errado aconteceu e o formulário não conseguiu ser enviado! Tente mandar uma mensagem pelo WhatsApp enquanto tentamos resolver.")
+            setResult("");
         }
     };
 
@@ -47,9 +48,9 @@ export default function ContactForm() {
 
                 <input type="hidden" name="subject" value="Form recebido - Página Freelancer" />
 
-                <Button variant="primary" type="submit">Enviar Mensagem</Button>
-
-                <span>{result}</span>
+                <Button variant="primary" type="submit">
+                    {result === "" ? 'Enviar Mensagem' : result}
+                </Button>
             </Form>
         </div>
     );

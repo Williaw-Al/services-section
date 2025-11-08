@@ -3,6 +3,7 @@ import { Home } from "./home";
 import { Templates } from "./templates";
 import { AnimatePresence } from "motion/react";
 import { Contact } from "./contact";
+import { Done } from "./done";
 
 export const AppRoutes = () => {
     const location = useLocation()
@@ -13,6 +14,7 @@ export const AppRoutes = () => {
                 <Route index element={<Home />} />
                 <Route path="/modelos-sites" element={<Templates />} />
                 <Route path="/entre-em-contato" element={<Contact />} />
+                <Route path="/teu-espaco-virtual" element={<Done />} />
             </Routes>
         </AnimatePresence>
     )

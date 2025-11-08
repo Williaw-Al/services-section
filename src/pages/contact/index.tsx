@@ -6,6 +6,11 @@ import '../../assets/styles/contact.css'
 import ContactForm from "../../components/contact-form"
 
 export const Contact = () => {
+    function handleWhatsappButton(): void {
+        console.log('olá');
+        
+    }
+
     return (
         <motion.div className="contact-session"
             initial={{ y: 100 }}
@@ -22,8 +27,9 @@ export const Contact = () => {
             </div>
 
             <h2>Ou me chama pelo WhatsApp!</h2>
+            <button className="whatsapp-button" onClick={handleWhatsappButton}>WhatsApp</button>
 
-            <button className="whatsapp-button">WhatsApp</button>
+        <Link to="/teu-espaco-virtual">Teste</Link>
 
         </motion.div>
     )
