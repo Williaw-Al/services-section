@@ -1,0 +1,10 @@
+.header {
+    position: fixed;
+    display: flex;
+
+    top: 0;
+    right: 0;
+}
+.header .theme-toggler {
+    align-self: flex-end;
+}
