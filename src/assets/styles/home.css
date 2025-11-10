@@ -84,12 +84,16 @@
   transform: translateX(0) rotate(0deg);
 }
 
-.main .templates-button:hover .box-left {
+.main .templates-button:hover .box-left,
+.main .templates-button:active .box-left,
+.main .templates-button:focus .box-left {
   transform: translate(-35%, 5px) rotate(-20deg);
   opacity: 0.4;
 }
 
-.main .templates-button:hover .box-right {
+.main .templates-button:hover .box-right,
+.main .templates-button:active .box-right,
+.main .templates-button:focus .box-right {
   transform: translate(35%, 5px) rotate(20deg);
   opacity: 0.4;
 }
@@ -101,10 +105,11 @@
   transition: color 0.3s ease;
 }
 
-.main .templates-button:hover span {
+.main .templates-button:hover span,
+.main .templates-button:active span,
+.main .templates-button:focus span {
   color: #ff7800;
 }
-
 
 @media (max-width: 960px) {
   .main {
@@ -116,7 +121,6 @@
     width: 200px;
   }
 }
-
 @media (max-width: 460px) {
   .main .about-box {
     width: auto;
