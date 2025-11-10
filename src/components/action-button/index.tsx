@@ -4,7 +4,8 @@ import { Link } from 'react-router';
 export const ActionButton = (props: any) => {
     return (
         <Link to="/entre-em-contato">
-            <Button variant="primary" size='lg'>
+            <Button variant="primary" size='lg' className='btn-cta-form'>
+                <div className='btn-motion' />
                 {props.children}
             </Button>
         </Link>

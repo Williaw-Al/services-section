@@ -1,4 +1,9 @@
 :root {
+  --font-header: 'Lora', 'Times New Romans', serif;
+  --font-action: 'Bebas Neue', sans-serif;
+}
+
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -18,6 +23,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,7 +31,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  background-color: var(--bg-color);
+  background-color: var(--bg-main-color);
 
   place-items: center;
   min-width: 320px;
@@ -48,9 +54,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -61,10 +69,69 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.btn-cta-form {
+  position: relative;
+  font-family: var(--font-action);
+  font-size: xx-large;
+  z-index: 1;
+}
+
+.btn-cta-form .btn-motion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: 100%;
+  border: solid 2px var(--primary-color);
+  border-radius: 8px;
+  opacity: 0;
+  z-index: -1;
+  /* Fica atrás do botão */
+}
+
+.btn-cta-form:hover .btn-motion,
+.btn-cta-form:focus .btn-motion,
+.btn-cta-form:active .btn-motion {
+  opacity: 1;
+  animation: btnanimation 0.6s infinite;
+}
+
+@keyframes btnanimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1.02, 1.1);
+    opacity: 0.7;
+    border: solid 10px var(--primary-color);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(1.05, 1.2);
+    opacity: 0.4;
+    padding: 5px;
+  }
+
+  75% {
+    transform: translate(-50%, -50%) scale(1.1, 1.2);
+    opacity: 0.2;
+    padding: 15px;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

@@ -1,26 +1,40 @@
 .main {
-    display: flex;
-    place-items: center center;
-    gap: 40px;
+  display: flex;
+  place-items: center center;
+  gap: 40px;
 }
 
 .main .avatar-container {
-    width: 260px;
+  width: 270px;
 }
 
 .main .avatar-container img {
-    width: 100%;
+  width: 100%;
 }
 
 .main .about-box {
-    width: 400px;
-    height: 300px;
-    padding: 1rem;
-    overflow-y: scroll
+  background-color: var(--bg-side-color);
+  color: var(--text-main-color);
+  width: 400px;
+  height: 300px;
+  padding: 1rem;
+  overflow-y: scroll
 }
 
-.main .about-box .accordion-body{
-    background-color: gray;
+.main .about-box .call {
+  font-family: var(--font-header);
+}
+
+.main .about-box .accordion-header .accordion-button {
+  background-color: var(--bg-main-color);
+  color: var(--primary-color);
+}
+
+.main .about-box .accordion-body {
+  color: var(--text-side-color);
+  background-color: var(--bg-highlight-color);
+
+  text-shadow: 1px 1px 4px var(--primary-color);
 }
 
 .main .templates-button {
@@ -34,7 +48,7 @@
 
 .main .template-box-container {
   position: relative;
-  width: 80px; 
+  width: 80px;
   height: 120px;
   margin-bottom: 20px;
 }
@@ -89,4 +103,26 @@
 
 .main .templates-button:hover span {
   color: #ff7800;
+}
+
+
+@media (max-width: 960px) {
+  .main {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .main .avatar-container {
+    width: 200px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main .about-box {
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+
+    overflow-y: auto;
+  }
 }

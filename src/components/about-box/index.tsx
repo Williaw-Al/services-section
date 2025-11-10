@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 export const AboutBox = () => {
     return (
         <Card border="primary" className='about-box'>
-            <p>Construo a tua ideia em uma página web funcional e pronta para evoluir com o teu Negócio.</p>
+            <p className='call'>Construo a tua ideia em uma página web funcional e pronta para evoluir com o teu Negócio.</p>
             <p>Esteja na palma da mão dos seus clientes e dê o seu próximo passo digital.</p>
 
             <Accordion>
