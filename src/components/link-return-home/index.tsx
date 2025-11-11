@@ -7,7 +7,7 @@ export const LinkReturnHome = ({ show }: { show: boolean }) => {
         <div className="return-button" style={show ? { height: 'fit' } : { height: 0, overflow: "clip" }}>
             <Link to='/' >
                 <FontAwesomeIcon icon={faAngleDoubleLeft} />
-                Clique aqui para voltar
+                Voltar ao início
             </Link>
         </div>
     )
