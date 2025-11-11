@@ -2,12 +2,37 @@
     position: fixed;
     top: 10px;
     left: 0;
-    
+
     display: flex;
     width: 100%;
     justify-content: space-around;
 
 }
-.header .theme-toggler {
-    justify-self: end;
+
+.header .theme-toggler-container {
+    display: flex;
+    gap: 5px;
+    place-items: center center;
+
+    color: var(--text-main-color);
+}
+.header .theme-toggler-container span{
+    pointer-events: none;
+}
+
+.header .theme-toggler-container .theme-toggler {
+    width: 50px;
+    height: 30px;
+    background-color: hsl(from var(--primary-color) h s l / 0.3 );
+    border-radius: 50px;
+    display: flex;
+    padding: 2px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .theme-toggler-container .theme-toggler .handle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-side-color);
+    border-radius: 50%
 }
