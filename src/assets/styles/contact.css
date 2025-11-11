@@ -1,7 +1,12 @@
+#form-test {
+    z-index: 1;
+}
+
 .contact-session {
     display: flex;
     flex-direction: column;
     place-items: center center;
+    z-index: 1;
 }
 
 .contact-session .return-button {
@@ -64,10 +69,12 @@
 h2 {
     color: var(--text-main-color);
     margin-bottom: 25px;
+    z-index: 1;
 }
 
 h2 .whatsapp-span {
     color: var(--whatsapp-color);
+    z-index: 1;
 }
 
 .whatsapp-button {
@@ -79,6 +86,7 @@ h2 .whatsapp-span {
     border-radius: 2rem;
 
     margin-bottom: 25px;
+    z-index: 1;
 }
 
 @media (max-width: 520px) {

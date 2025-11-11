@@ -31,7 +31,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  background-color: var(--bg-main-color);
 
   place-items: center;
   min-width: 320px;
@@ -134,4 +133,13 @@ button:focus-visible {
   100% {
     opacity: 0;
   }
+}
+
+#tsparticles {
+  background-color: var(--bg-main-color);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

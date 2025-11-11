@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router';
 import { ThemeProvider } from './contexts/theme-context';
 import { HeaderThemeToggler } from './components/header-theme-toggler';
 
+import { ParticleBackground } from './features/ParticleBackground'
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
     <>
       <ThemeProvider>
         <BrowserRouter>
-          <HeaderThemeToggler />
-          <AppRoutes />
+          <ParticleBackground />
+            <HeaderThemeToggler />
+            <AppRoutes />
         </BrowserRouter>
       </ThemeProvider>
     </>
