@@ -19,10 +19,6 @@ export const Contact = () => {
             animate={{ y: 0 }}
             exit={{ y: 2000, transition: { duration: 0.2 } }}
         >
-            <Link to="/" className="return-button">
-                Clique em mim para voltar
-            </Link>
-
             <div className="contact-img-container">
                 <img src={dealAvatar} alt="Aperto de mãos" title="Aperto de mãos" />
                 <ContactForm />

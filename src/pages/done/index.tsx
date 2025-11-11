@@ -1,8 +1,8 @@
 import { motion } from "motion/react"
-import { Link } from "react-router"
 
 import siteShowcase from "../../assets/images/site-showcase.webp"
 import '../../assets/styles/done.css'
+import { LinkReturnHome } from "../../components/link-return-home"
 
 export const Done = () => {
     return (
@@ -18,9 +18,7 @@ export const Done = () => {
             <h1>O teu passo para uma Presença Digital mais forte foi dado!</h1>
             <h2>Agora é só esperar que entrarei em contato em até 24 horas! </h2>
 
-            <Link to="/">
-                Voltar para a Página Inicial
-            </Link>
+            <LinkReturnHome show={true} />
         </motion.div>
     )
 }

@@ -2,11 +2,14 @@
     display: flex;
     flex-direction: column;
     place-items: center center;
+    gap: 25px;
+
+    color: var(--text-main-color);
 }
 
 .done-section .image-container {
     position: relative;
-    width: 600px;
+    max-width: 700px;
 }
 .done-section .image-container img {
     width: 100%;
@@ -19,5 +22,18 @@
     bottom: 0;
     left: 0;
 
-    background: linear-gradient(to bottom, transparent, #ffffff);
+    background: linear-gradient(to bottom, transparent, var(--bg-main-color));
+}
+
+.done-section h1 {
+    font-family: var(--font-header);
+}
+
+@media (max-width: 816px) {
+    .done-section h1 {
+        font-size: xx-large;
+    }
+    .done-section h2 {
+        font-size: x-large;
+    }
 }

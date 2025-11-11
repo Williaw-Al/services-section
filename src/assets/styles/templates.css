@@ -7,10 +7,8 @@
     color: var(--text-main-color);
 }
 
-.templates-section .return-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+.header .return-button {
+    opacity: 1;
 }
 
 .templates-section .templates-avatar-bg-container {

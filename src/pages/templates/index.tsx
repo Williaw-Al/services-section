@@ -1,4 +1,3 @@
-import { Link } from "react-router"
 import { TemplatesContainer } from "../../components/templates-container"
 
 import { motion } from "motion/react"
@@ -13,10 +12,6 @@ export const Templates = () => {
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             exit={{ x: 2000, transition: { duration: 0.2 } }} >
-
-            <Link to="/" className="return-button">
-                Clique em mim para voltar
-            </Link>
 
             <div className="templates-avatar-bg-container">
                 <img src={avatarFundo} alt="Avatar mostrando os modelos das páginas" />

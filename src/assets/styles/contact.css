@@ -6,8 +6,8 @@
 
 .contact-session .return-button {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
 }
 
 .contact-session .contact-img-container {

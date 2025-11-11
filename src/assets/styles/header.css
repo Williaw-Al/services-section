@@ -1,10 +1,13 @@
 .header {
     position: fixed;
+    top: 10px;
+    left: 0;
+    
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 
-    top: 0;
-    right: 0;
 }
 .header .theme-toggler {
-    align-self: flex-end;
+    justify-self: end;
 }
