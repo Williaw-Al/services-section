@@ -1,3 +1,9 @@
+.contact-session {
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+}
+
 .contact-session .return-button {
     position: fixed;
     top: 0;
@@ -8,30 +14,84 @@
     position: relative;
     width: 400px;
 
-    margin-bottom: 100px;
+    margin-bottom: 115px;
 }
-.contact-session .contact-img-container img{
+
+.contact-session .contact-img-container img {
     width: 100%;
 }
 
-.contact-form-container{
+.contact-form-container {
     position: absolute;
     bottom: -90px;
     right: 50%;
     transform: translateX(50%);
-    
+
     display: flex;
     flex-direction: column;
     place-items: center center;
+
+    color: var(--text-main-color);
+}
+
+.contact-form-container h1 {
+    margin-bottom: 20px;
+    font-family: var(--font-header);
+
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow:
+        1px 1px 2px var(--text-side-color), -1px -1px 2px var(--text-side-color),
+        1px 1px 5px var(--primary-color), -1px -1px 5px var(--primary-color),
+        2px 2px 6px var(--text-main-color), -2px -2px 6px var(--text-main-color);
 }
 
 .contact-form-container .contact-form {
     width: 500px;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: rgba(226, 149, 149, 0.473);
+    background-color: hsl(from var(--primary-color) h s l / 0.5);
+
+    text-shadow: 1px 1px 2px var(--text-side-color), -1px -1px 2px var(--text-side-color);
+    font-weight: 500;
+    font-size: large;
 }
 
 .contact-form-container .contact-form .btn {
     margin-top: 1rem;
+}
+
+h2 {
+    color: var(--text-main-color);
+    margin-bottom: 25px;
+}
+
+h2 .whatsapp-span {
+    color: var(--whatsapp-color);
+}
+
+.whatsapp-button {
+    color: var(--whatsapp-color);
+    background-color: var(--bg-highlight-color);
+
+    font-size: xx-large;
+    border: solid 5px #ffffff;
+    border-radius: 2rem;
+
+    margin-bottom: 25px;
+}
+
+@media (max-width: 520px) {
+    .contact-session .contact-img-container {
+        width: 305px;
+        margin-bottom: 300px;
+    }
+
+    .contact-form-container {
+        bottom: -290px;
+    }
+
+    .contact-form-container .contact-form {
+        max-width: 310px;
+    }
 }

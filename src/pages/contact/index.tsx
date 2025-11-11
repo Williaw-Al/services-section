@@ -4,6 +4,8 @@ import { Link } from "react-router"
 import dealAvatar from "../../assets/images/shaking-hands-avatar.webp"
 import '../../assets/styles/contact.css'
 import ContactForm from "../../components/contact-form"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export const Contact = () => {
     function handleWhatsappButton(): void {
@@ -26,8 +28,10 @@ export const Contact = () => {
                 <ContactForm />
             </div>
 
-            <h2>Ou me chama pelo WhatsApp!</h2>
-            <button className="whatsapp-button" onClick={handleWhatsappButton}>WhatsApp</button>
+            <h2>Ou me chama pelo <span className="whatsapp-span">WhatsApp</span>!</h2>
+            <button className="whatsapp-button" onClick={handleWhatsappButton}>
+                <FontAwesomeIcon icon={faWhatsapp} />
+                WhatsApp</button>
 
         <Link to="/teu-espaco-virtual">Teste</Link>
 

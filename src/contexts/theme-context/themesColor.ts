@@ -7,14 +7,18 @@ export const themesColor = {
         '--text-main-color': '#000000',
         '--text-side-color': '#ffffff',
         '--primary-color': '#007bff',
+        
+        '--whatsapp-color': '#075e54',
     },
     dark: {
         '--bg-main-color': '#121212',
         '--bg-side-color': '#212121',
         '--bg-highlight-color': '#333333',
-
+        
         '--text-main-color': '#ffffff',
         '--text-side-color': '#000000',
         '--primary-color': '#4da6ff',
+        
+        '--whatsapp-color': '#25d366',
     },
 };
