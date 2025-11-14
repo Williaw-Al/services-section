@@ -19,7 +19,7 @@
     position: relative;
     width: 400px;
 
-    margin-bottom: 115px;
+    margin-bottom: 215px;
 }
 
 .contact-session .contact-img-container img {
@@ -28,38 +28,33 @@
 
 .contact-form-container {
     position: absolute;
-    bottom: -90px;
+    bottom: -200px;
     right: 50%;
     transform: translateX(50%);
 
     display: flex;
     flex-direction: column;
     place-items: center center;
-
-    color: var(--text-main-color);
-}
-
-.contact-form-container h1 {
-    margin-bottom: 20px;
-    font-family: var(--font-header);
-
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow:
-        1px 1px 2px var(--text-side-color), -1px -1px 2px var(--text-side-color),
-        1px 1px 5px var(--primary-color), -1px -1px 5px var(--primary-color),
-        2px 2px 6px var(--text-main-color), -2px -2px 6px var(--text-main-color);
 }
 
 .contact-form-container .contact-form {
     width: 500px;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: hsl(from var(--primary-color) h s l / 0.5);
-
-    text-shadow: 1px 1px 2px var(--text-side-color), -1px -1px 2px var(--text-side-color);
+    background-color: hsl(from var(--primary-color) h s l / 0.9);
+    
+    color: var(--text-side-color);
+    
     font-weight: 500;
     font-size: large;
+}
+
+.contact-form-container .contact-form h1 {
+    margin-bottom: 20px;
+    
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-header);
 }
 
 .contact-form-container .contact-form .btn {

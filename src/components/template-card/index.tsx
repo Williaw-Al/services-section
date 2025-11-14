@@ -1,16 +1,13 @@
 import Card from 'react-bootstrap/Card';
 
 interface TemplateCardProps {
-  data?: {
-    title: string;
-    description: string;
-  };
+  image: string
 }
 
-export const TemplateCard: React.FC<TemplateCardProps> = () => {
+export const TemplateCard: React.FC<TemplateCardProps> = ({image}) => {
   return (
     <Card border="success" className='template-card' >
-      <Card.Img src="https://placehold.co/500x500" title='Ver a página' />
+      <Card.Img src={image} title='Ver a página' />
     </Card>
   )
 }

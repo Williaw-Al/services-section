@@ -30,9 +30,9 @@ export default function ContactForm() {
 
     return (
         <div className='contact-form-container'>
-            <h1>Preencha os dados abaixo para me mandar um e-mail!</h1>
 
             <Form onSubmit={onSubmit} className='contact-form'>
+            <h1>Preencha os dados abaixo para me mandar um e-mail!</h1>
                 <Form.Group controlId='name'>
                     <Form.Label>Seu Nome:</Form.Label>
                     <Form.Control type="text" name="name" placeholder="Seu nome" required />
