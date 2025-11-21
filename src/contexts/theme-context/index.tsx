@@ -42,6 +42,12 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
+  window.addEventListener('message', (event) => { 
+    if (event.data.type === 'setTheme') {
+      setTheme(event.data.theme)
+    }
+  })
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
