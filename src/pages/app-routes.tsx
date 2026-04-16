@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from "react-router";
 import { Home } from "./home";
 import { Templates } from "./templates";
+import { TemplatePage } from "./template-page";
 import { AnimatePresence } from "motion/react";
 import { Contact } from "./contact";
 import { Done } from "./done";
@@ -13,6 +14,7 @@ export const AppRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route index element={<Home />} />
                 <Route path="/modelos-sites" element={<Templates />} />
+                <Route path="/modelos-sites/:id" element={<TemplatePage />} />
                 <Route path="/entre-em-contato" element={<Contact />} />
                 <Route path="/teu-espaco-virtual" element={<Done />} />
             </Routes>

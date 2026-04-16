@@ -23,7 +23,7 @@ export default function ContactForm() {
             event.target.reset();
             navigate("/teu-espaco-virtual");
         } else {
-            alert("Algo de errado aconteceu e o formulário não conseguiu ser enviado! Tente mandar uma mensagem pelo WhatsApp enquanto tentamos resolver.")
+            alert("Algo de errado aconteceu e o formulário não conseguiu ser enviado! Tente mandar uma mensagem pelo WhatsApp enquanto o problema é resolvido.")
             setResult("");
         }
     };
@@ -32,7 +32,7 @@ export default function ContactForm() {
         <div className='contact-form-container'>
 
             <Form onSubmit={onSubmit} className='contact-form'>
-            <h1>Preencha os dados abaixo para me mandar um e-mail!</h1>
+                <h1>Preencha os dados abaixo para me mandar um e-mail!</h1>
                 <Form.Group controlId='name'>
                     <Form.Label>Seu Nome:</Form.Label>
                     <Form.Control type="text" name="name" placeholder="Seu nome" required />
@@ -43,7 +43,7 @@ export default function ContactForm() {
                 </Form.Group>
                 <Form.Group controlId='message'>
                     <Form.Label>Mande uma mensagem:</Form.Label>
-                    <Form.Control as="textarea" name="message" rows={4} style={{resize: 'none'}} placeholder='Escreva sua mensagem aqui...' required />
+                    <Form.Control as="textarea" name="message" rows={4} style={{ resize: 'none' }} placeholder='Escreva sua mensagem aqui...' required />
                 </Form.Group>
 
                 <input type="hidden" name="subject" value="Form recebido - Página Freelancer" />

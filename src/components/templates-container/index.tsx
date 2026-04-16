@@ -7,9 +7,9 @@ import card3 from "../../assets/images/template-goulart.webp"
 export const TemplatesContainer = () => {
   return (
     <div className="templates-container">
-      <TemplateCard image={card1} />
-      <TemplateCard image={card2} />
-      <TemplateCard image={card3} />
+      <TemplateCard image={card1} templateId="0" />
+      <TemplateCard image={card2} templateId="1" />
+      <TemplateCard image={card3} templateId="2" />
     </div>
   )
 };

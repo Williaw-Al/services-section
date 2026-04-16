@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { Link } from "react-router"
+import { useNavigate } from "react-router"
 
 import dealAvatar from "../../assets/images/shaking-hands-avatar.webp"
 import '../../assets/styles/contact.css'
@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export const Contact = () => {
+    const navigate = useNavigate()
+
     function handleWhatsappButton(): void {
-        console.log('olá');
-        
+        window.open('https://wa.me/5555991298970', '_blank')
+        navigate('/teu-espaco-virtual')
     }
 
     return (
@@ -24,12 +26,10 @@ export const Contact = () => {
                 <ContactForm />
             </div>
 
-            <h2>Ou me chama pelo <span className="whatsapp-span">WhatsApp</span>!</h2>
+            <h2>Ou me chame pelo <span className="whatsapp-span">WhatsApp</span>!</h2>
             <button className="whatsapp-button" onClick={handleWhatsappButton}>
                 <FontAwesomeIcon icon={faWhatsapp} />
                 WhatsApp</button>
-
-        <Link to="/teu-espaco-virtual" id="form-test">Teste</Link>
 
         </motion.div>
     )

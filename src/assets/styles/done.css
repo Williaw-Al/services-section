@@ -11,9 +11,11 @@
     position: relative;
     max-width: 700px;
 }
+
 .done-section .image-container img {
     width: 100%;
 }
+
 .done-section .image-container::after {
     content: '';
     position: absolute;
@@ -27,6 +29,7 @@
 
 .done-section h1 {
     font-family: var(--font-header);
+    max-width: 1080px;
     z-index: 1;
 }
 
@@ -38,6 +41,7 @@
     .done-section h1 {
         font-size: xx-large;
     }
+
     .done-section h2 {
         font-size: x-large;
     }
