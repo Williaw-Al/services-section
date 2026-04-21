@@ -25,7 +25,7 @@ export const Templates = () => {
             <h3>Último projeto: Página ShowBis Itaqui</h3>
 
             <Card border="success" className='template-card' >
-                <a href="https://williaw-al.github.io/showbis-page" target="_blank">
+                <a href="https://showbisitaqui.vercel.app" target="_blank">
                     <Card.Img src={highlightTemplate} title='Ver a página da ShowBis' />
                 </a>
             </Card>
